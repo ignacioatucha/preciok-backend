@@ -1,1 +1,1 @@
-web: playwright install chromium && uvicorn api.main:app --host 0.0.0.0 --port $PORT
+web: playwright install chromium && PYTHONPATH=/app uvicorn main:app --host 0.0.0.0 --port $PORT
